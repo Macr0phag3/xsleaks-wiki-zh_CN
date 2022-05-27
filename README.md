@@ -48,6 +48,8 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/opt-in/xfo.md`
 - [x] `defenses/design-protections/_index.md`
 - [x] `defenses/design-protections/cache-protections.md`
+- [x] `defenses/design-protections/subresource-protections.md`
+
 
 </details>
 
