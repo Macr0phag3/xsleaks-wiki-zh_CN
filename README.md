@@ -4,7 +4,7 @@
 
 ## 进度 67%
 <details>
-<summary>33/49</summary>
+<summary>33/49 点击展开进度详情</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
