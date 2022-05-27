@@ -6,7 +6,7 @@ Fork from https://github.com/xsleaks/wiki
 
 ## 进度 67%
 <details>
-<summary>33/49 点击展开进度详情</summary>
+<summary>34/49 点击展开进度详情</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
@@ -41,7 +41,8 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/_index.md`
 - [x] `defenses/opt-in/_index.md`
 - [x] `defenses/opt-in/coop.md`
-- [ ] `defenses/opt-in/corp.md`
+- [x] `defenses/opt-in/corp.md`
+- [ ] `defenses/opt-in/document-policies.md`
 
 </details>
 
