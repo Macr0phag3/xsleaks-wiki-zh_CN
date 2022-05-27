@@ -3,7 +3,8 @@
 由于本人翻译水平有限，所以本翻译保留了原文，方便进行对照。
 
 ## 进度 67%
-`33/49 = 67%`
+<details>
+<summary>`33/49 = 67%`</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
@@ -40,6 +41,7 @@
 - [x] `defenses/opt-in/coop.md`
 - [ ] `defenses/opt-in/corp.md`
 
+</details>
 ## 部署流程
 
 ### 在本地部署
