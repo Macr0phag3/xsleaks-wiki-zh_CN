@@ -1,0 +1,357 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you a Robot?</title>
+    <style>
+    * {
+    box-sizing: border-box
+    }
+
+    html,body {
+        color: #000;
+        text-align: center;
+        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif
+    }
+
+    .padding-10 {
+        padding: 10px
+    }
+
+    .fluid-x {
+        width: 100%
+    }
+
+    .fluid-y {
+        height: 100%
+    }
+
+    .relative {
+        position: relative
+    }
+
+    .container {
+        margin: auto;
+        padding: 10px;
+        text-align: left;
+        max-width: 700px
+    }
+
+    .container a {
+        color: #2a6df1
+    }
+
+    .alert {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 2px solid #d3d3d4
+    }
+
+    .alert ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+
+    .alert ul li {
+        margin-bottom: 5px
+    }
+
+    .alert.info {
+        border-color: #2a6df1;
+        background-color: #e0e9fe
+    }
+
+    .alert h3 {
+        margin: 0;
+        margin-bottom: 10px
+    }
+
+    .alert.warning {
+        border-color: #c1aa62;
+        background-color: #fff6da
+    }
+
+    .alert.error {
+        border-color: #c16262;
+        background-color: #ffdada
+    }
+
+    .control {
+        margin-bottom: 10px
+    }
+
+    .control label::selection {
+        background: 0 0
+    }
+
+    .control label {
+        display: block;
+        margin-bottom: 10px
+    }
+
+    input {
+        outline: none;
+        font-size: 20px;
+        min-width: 240px;
+        line-height: 24px;
+        padding: 9px 12px;
+        border-radius: 5px;
+        border: 2px solid #d3d3d4
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #2a6df1;
+        box-shadow: 0 0 0 2px hsla(220,89%,56%,.2)
+    }
+
+    button.btn {
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        min-width: 120px;
+        padding: 9px 18px;
+        text-align: center;
+        border-radius: 5px;
+        background: #2a6df1;
+        box-shadow: rgba(0,0,0,.06) 0 .1px .3px 0,rgba(0,0,0,.12) 0 1px 2px 0
+    }
+
+    button.btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px hsla(220,89%,56%,.2)
+    }
+
+    button.btn:disabled {
+        color: #000;
+        background: gray
+    }
+
+    .dialog-background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0,0,0,.5)
+    }
+
+    .dialog-background .dialog {
+        margin: auto;
+        max-width: 300px;
+        margin-top: 80px;
+        text-align: left;
+        background: #fff;
+        border: 2px solid #000
+    }
+
+    .dialog-background .dialog h3 {
+        margin: 0;
+        margin-bottom: 10px
+    }
+
+    .dialog-background .dialog h3 span {
+        margin-right: 8px
+    }
+
+    .dialog-background .dialog .actions {
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+        border-top: 2px solid #000
+    }
+
+    .dialog-background .dialog .actions button {
+        width: 46%;
+        margin: auto;
+        padding: 5px;
+        outline: none;
+        margin-top: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        background: 0 0;
+        border: 2px solid #000
+    }
+
+    .dialog-background .dialog .actions button.white {
+        color: #fff;
+        border-color: #fff
+    }
+
+        html,
+        body {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .captcha-container {
+            margin: auto;
+            width: 300px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: left;
+            position: relative;
+            background: #fff;
+            border: 1px solid #eee;
+            overflow: hidden;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls div {
+            margin-top: 5px;
+        }
+
+        .fake-1 {
+            position: absolute;
+            color: black;
+            font-size: 38px;
+            filter: blur(1px);
+            opacity: 0.9;
+            left: 25%;
+            top: -1px;
+            pointer-events: none;
+        }
+
+        .fake-2 {
+            position: absolute;
+            color: black;
+            font-size: 38px;
+            filter: blur(1px);
+            opacity: 0.95;
+            right: 25%;
+            top: -1px;
+            pointer-events: none;
+        }
+
+        .iframe-container {
+            background: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 50px;
+            padding: 6px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border: 2px solid #d3d3d4
+        }
+
+        .iframe-father {
+            display: block;
+            /*background: black;*/
+            margin: 0px 122px;
+            width: 15px;
+            height: 30px;
+            overflow: hidden;
+            /*position: absolute;*/
+
+            transform: scale(1.5);
+            transform-origin: 0% 0% 0px;
+            filter: brightness(1.3);
+        }
+
+        .iframe-body {
+            width: 2000px;
+            height: 2000px;
+            position: relative;
+            top: -165px;
+            left: 0px; 
+            filter: blur(1px);
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body style="--translation-color: inherit;">
+    <div class="container">
+        <div class="captcha-container">
+            <div class="iframe-container">
+                <img src="https://ronmasas.com/tail-spin.svg">
+                <div class="fake-1"></div>
+                <div class="fake-2"></div>
+                <div class="iframe-father">
+                    <iframe onload="updateFakes()" class="iframe-body" src="https://passport.baidu.com/v6/bind/mobileChoose">
+                    </iframe>
+                </div>
+            </div>
+            <div class="controls">
+                Enter the text as you see it above
+                <div>
+                    <input class="fluid-x" style="margin-bottom: 5px;">
+                    <button class="btn">Next 0/5</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+
+        function showLeak() {
+            let sorted = result.sort((a, b) => b[0] - a[0]);
+            let text = "";
+            for (let [_, char] of sorted) {
+                text += char;
+            }
+            alert(text.slice(0, 3)+"*".repeat(6)+text.slice(3));
+        }
+
+        const chunks = [];
+        const result = [];
+
+        randomChunks = shuffle(shuffle([-292, -309, -324, -420, -436]));
+        offset = randomChunks.pop();
+        document.querySelector(".iframe-body").style.left = offset+"px";
+        document.querySelector("button").addEventListener("click", function () {
+            const iframeContainer = document.querySelector(".iframe-container");
+            const fake1 = iframeContainer.querySelector(".fake-1");
+            const fake2 = iframeContainer.querySelector(".fake-2");
+            const input = document.querySelector("input")
+            if (!input.value.startsWith(fake1.innerText) || !input.value.endsWith(fake2.innerText)) {
+                alert("验证码错误，请检查你输入的验证码");
+                return;
+            }
+            result.push([offset, input.value[1]])
+
+            if (randomChunks.length === 0) {
+                return showLeak();
+            }
+
+            offset = randomChunks.pop();
+            document.querySelector("button").innerText = `Next ${4 - randomChunks.length}/5`;
+
+            input.value = "";
+            input.focus();
+            const iframeBody = document.querySelector(".iframe-body");
+            iframeBody.style.left = offset+"px";
+            updateFakes();
+        });
+
+        function updateFakes() {
+            const iframeContainer = document.querySelector(".iframe-container");
+            const fake1 = iframeContainer.querySelector(".fake-1");
+            const fake2 = iframeContainer.querySelector(".fake-2");
+
+            alphabet = "0123456789";
+            let pos1 = Math.round(Math.random() * (alphabet.length - 1));
+            let pos2 = Math.round(Math.random() * (alphabet.length - 1));
+            fake1.innerText = alphabet[pos1];
+            fake2.innerText = alphabet[pos2];
+            document.querySelector("img").style.display = "none";
+        }
+
+    </script>
+    </script>
