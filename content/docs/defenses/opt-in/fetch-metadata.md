@@ -44,7 +44,7 @@ This allows for a more precise deployment of protections in scenarios where Same
 
 ## 权衡
 
-Fetch Metadata 头信息是深度防御策略的一个有用工具，但不应被视为 [SameSite Cookies]({{< ref "seame-site-cookies.md" >}})、[COOP]({{< ref "coop.md" >}}) 或 [Framing Protections]({{< ref "xfo.md" >}}) 等机制的替代品。尽管可以使用 Fetch Metadata 头来实现类似的结果，但除了服务器之外，在客户端强制执行这些限制也是一种最佳做法。
+Fetch Metadata 头信息是深度防御策略的一个有用工具，但不应被视为 [SameSite Cookies]({{< ref "same-site-cookies.md" >}})、[COOP]({{< ref "coop.md" >}}) 或 [Framing Protections]({{< ref "xfo.md" >}}) 等机制的替代品。尽管可以使用 Fetch Metadata 头来实现类似的结果，但除了服务器之外，在客户端强制执行这些限制也是一种最佳做法。
 
 Fetch Metadata headers are a useful tool for a defense-in-depth strategy, but should not be seen as a replacement for mechanisms such as [SameSite Cookies]({{< ref "same-site-cookies.md" >}}), [COOP]({{< ref "coop.md" >}}), or [Framing Protections]({{< ref "xfo.md" >}}). Even though Fetch Metadata headers can be used to achieve similar results, it is a best practice to enforce these restrictions on the client side in addition to the server.
 
@@ -53,6 +53,6 @@ Fetch Metadata 头的有效性取决于应用覆盖率和是否正确地进行�
 The usefulness of Fetch Metadata headers is dependent on the application coverage and correctness of the deployment.
 
 ## 策略
-关于利用 Fetch Metadata 请求头的具体策略，请参见 [Resource Isolation Policy]({{< ref "../isolation-policy/resource-isolation.md" >}}) 和 [Framing Isolation Policy]({{< ref ".../isolation-policy/framing-isolation.md" >}})。
+关于利用 Fetch Metadata 请求头的具体策略，请参见 [Resource Isolation Policy]({{< ref "../isolation-policies/resource-isolation.md" >}}) 和 [Framing Isolation Policy]({{< ref "../isolation-policies/framing-isolation.md" >}})。
 
 See [Resource Isolation Policy]({{< ref "../isolation-policies/resource-isolation.md" >}}) and [Framing Isolation Policy]({{< ref "../isolation-policies/framing-isolation.md" >}}) for specific policies utilizing Fetch Metadata Request Headers.
