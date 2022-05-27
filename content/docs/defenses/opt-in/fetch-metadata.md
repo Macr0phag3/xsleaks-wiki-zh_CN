@@ -42,7 +42,7 @@ Fetch Metadata headers can be used to extend the protections provided by SameSit
 
 This allows for a more precise deployment of protections in scenarios where SameSite cookies could break a service's functionalities. One disadvantage of Fetch Metadata compared to SameSite cookies is that the latter can also protect unencrypted requests (HTTP) while the former can't.
 
-## 考虑因素
+## 权衡
 
 Fetch Metadata 头信息是深度防御策略的一个有用工具，但不应被视为 [SameSite Cookies]({{< ref "seame-site-cookies.md" >}})、[COOP]({{< ref "coop.md" >}}) 或 [Framing Protections]({{< ref "xfo.md" >}}) 等机制的替代品。尽管可以使用 Fetch Metadata 头来实现类似的结果，但除了服务器之外，在客户端强制执行这些限制也是一种最佳做法。
 

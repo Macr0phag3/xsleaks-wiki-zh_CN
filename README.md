@@ -44,7 +44,7 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/opt-in/corp.md`
 - [x] `defenses/opt-in/document-policies.md`
 - [x] `defenses/opt-in/fetch-metadata.md`
-- [ ] `defenses/opt-in/same-site-cookies.md`
+- [x] `defenses/opt-in/same-site-cookies.md`
 
 </details>
 

@@ -42,7 +42,7 @@ There are three possible values for the COOP header:
 
 If possible, it is recommended to set `same-origin`. If you set `same-origin-allow-popups`, be sure to review what websites you open with `window.open` and ensure that they are trusted. 
 
-## 需要考虑的因素
+## 权衡
 
 由于 COOP 是一个 opt-in 机制，而且是一个非常新的机制，它很容易被开发者和安全工程师所忽视。尽管如此，我们还是要强调这个防御机制的重要性，因为它是防止攻击者利用 XS-Leaks 的唯一方法，而 XS-Leaks 是利用 `window.open` 等 API 来返回 window 引用（除非 `Strict` 模式的 SameSite Cookies 可以广泛部署）。
 
