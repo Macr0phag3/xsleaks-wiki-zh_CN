@@ -42,7 +42,8 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/opt-in/_index.md`
 - [x] `defenses/opt-in/coop.md`
 - [x] `defenses/opt-in/corp.md`
-- [ ] `defenses/opt-in/document-policies.md`
+- [x] `defenses/opt-in/document-policies.md`
+- [ ] `defenses/opt-in/fetch-metadata.md`
 
 </details>
 
