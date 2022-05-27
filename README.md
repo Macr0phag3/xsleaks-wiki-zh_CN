@@ -4,7 +4,7 @@
 
 ## 进度 67%
 <details>
-<summary>`33/49 = 67%`</summary>
+<summary>33/49</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
@@ -42,6 +42,7 @@
 - [ ] `defenses/opt-in/corp.md`
 
 </details>
+
 ## 部署流程
 
 ### 在本地部署
