@@ -283,7 +283,7 @@ Usage
 await ifCached_window("https://example.org");
 ```
 {{< hint info >}}
-分区的 HTTP 缓存绕过这个手法，可以通过使用头 `Vary: Sec-Fetch-Site` 来防御，因为它是按照 initiator 分割缓存，见 [Cache Protections]({{< ref "/docs/defenses/design-protections/cache-protections.md" >}})。防御之所以有效的因为是，这种攻击只适用于来自同一网站的资源，因此 `Sec-Fetch-Site` 头对攻击者来说是 `cross-site`，而对网站来说是 `same-site` 或 `same-origin`。
+分区的 HTTP 缓存绕过这个手法，可以通过使用头 `Vary: Sec-Fetch-Site` 来防御，因为它是按照 initiator 隔离缓存，见 [Cache Protections]({{< ref "/docs/defenses/design-protections/cache-protections.md" >}})。防御之所以有效的因为是，这种攻击只适用于来自同一网站的资源，因此 `Sec-Fetch-Site` 头对攻击者来说是 `cross-site`，而对网站来说是 `same-site` 或 `same-origin`。
 
 Partitioned HTTP Cache Bypass can be prevented using the header `Vary: Sec-Fetch-Site` as that splits the cache by its initiator, see [Cache Protections]({{< ref "/docs/defenses/design-protections/cache-protections.md" >}}). It works because the attack only applies for the resources from the same site, hence `Sec-Fetch-Site` header will be `cross-site` for the attacker compared to `same-site` or `same-origin` for the website.
 {{< /hint >}}

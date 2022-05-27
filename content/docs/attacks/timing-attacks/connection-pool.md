@@ -40,7 +40,7 @@ To exploit the existence of this limit, attackers can:
 
 
 {{< hint info >}}
-与[分区缓存]({{< ref "../../defenses/secure-defaults/partitioned-cache.md" >}})类似，一些浏览器正考虑将资源的 `按站点/来源分割` 的原则扩展到[socket 池](https://bugzilla.mozilla.org/show_bug.cgi?id=1572544) 上。
+与[分区缓存]({{< ref "../../defenses/secure-defaults/partitioned-cache.md" >}})类似，一些浏览器正考虑将资源的 `按站点/来源隔离` 的原则扩展到[socket 池](https://bugzilla.mozilla.org/show_bug.cgi?id=1572544) 上。
 
 Similar to [partitioned caches]({{< ref "../../defenses/secure-defaults/partitioned-cache.md" >}}), some browsers are considering to extend the principle of "split per site/origin" of resources to [socket pools](https://bugzilla.mozilla.org/show_bug.cgi?id=1572544).
 {{< /hint >}}
