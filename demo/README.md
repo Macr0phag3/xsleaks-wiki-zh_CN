@@ -8,8 +8,10 @@
 ## demo 介绍
 
 ### 恶意验证码.html
-使用步骤
+目的：获取用户手机号
+
+使用步骤：
 1. 打开 Chrome
-1. 登录百度账号: https://www.baidu.com/my/index
+1. 登录百度账号（需要绑定过手机号）：https://www.baidu.com/my/index
 1. 打开 `恶意验证码.html`，按照提示输入验证码
 1. surprise!
