@@ -32,7 +32,7 @@ When using any mitigations that rely on browser support, be sure to check that t
 {{< /hint >}}
 
 ## 应用程序设计
-应用设计[技术]({{< ref "design-protections/_index.md" >}})专注于如何精心设计应用程序来防止 XS-Leaks。当立即启用更强的全局保护措施不现实时，这是一个非常有用的方法。另一个很大的优势是，即使在不支持最新浏览器标准的旧版浏览器上，精心设计的应用程序也能阻止 XS-Loaks。
+应用设计[技术]({{< ref "design-protections/_index.md" >}})专注于如何精心设计应用程序来防止 XS-Leaks。当立即启用更强的全局保护措施不现实时，这是一个非常有用的方法。另一个很大的优势是，即使在不支持最新浏览器标准的旧版浏览器上，精心设计的应用程序也能阻止 XS-Leaks。
 
 Application design [techniques]({{< ref "design-protections/_index.md" >}}) are focused on carefully designing the application in a way that prevents XS-Leaks. This is a very useful approach when it is not practical to enable stronger global protections immediately. The other big advantage is that careful application design can stop XS-Leaks even on older browsers that don't support the newest browser standards.
 
