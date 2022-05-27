@@ -20,7 +20,7 @@ If an application sets a certain resource CORP header as 'same-site' or 'same-or
 
 When using CORP, be aware of the following facts:
 
-* CORP 不对 navigate 请求进行保护。这意味着在不支持 out-of-process iframe 的浏览器中，如果不使用 [framing protections]({{< ref "../opt-in/xfo.md" >}})，受 CORP 保护的资源仍然可能出现在另一个源的进程里。
+* CORP 不对 navigation 请求进行保护。这意味着在不支持 out-of-process iframe 的浏览器中，如果不使用 [framing protections]({{< ref "../opt-in/xfo.md" >}})，受 CORP 保护的资源仍然可能出现在另一个源的进程里。
 * 使用 CORP 引入了[一个新的 XS-Leak]({{< ref "../../attacks/browser-features/corp.md" >}})，它允许攻击者检测在某个请求中是否执行了 CORP。
 ---
 * CORP does not protect against navigational requests. This means that in browsers that do not support out-of-process iframes, a CORP-protected resource may still end up in another origin's process if [framing protections]({{< ref "../opt-in/xfo.md" >}}) are not used. 

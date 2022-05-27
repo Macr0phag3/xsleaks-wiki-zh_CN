@@ -4,9 +4,9 @@ Fork from https://github.com/xsleaks/wiki
 
 由于本人翻译水平有限，所以本翻译保留了原文，方便进行对照。
 
-## 进度 67%
+## 进度 73%
 <details>
-<summary>34/49 点击展开进度详情</summary>
+<summary>36/49 点击展开进度详情</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
@@ -43,7 +43,8 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/opt-in/coop.md`
 - [x] `defenses/opt-in/corp.md`
 - [x] `defenses/opt-in/document-policies.md`
-- [ ] `defenses/opt-in/fetch-metadata.md`
+- [x] `defenses/opt-in/fetch-metadata.md`
+- [ ] `defenses/opt-in/same-site-cookies.md`
 
 </details>
 
