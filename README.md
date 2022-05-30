@@ -81,3 +81,9 @@ demo 文件夹中是我根据 wiki 以及一些已有代码，尝试写的 poc/e
 ~~本仓库的每次 Pull Request 都会触发 [Github Actions](https://github.com/features/actions) 进行自动化部署与推送 XS-Leaks Wiki。为了将 Github Actions 用在 Github Pages 中，我们用到了 [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)。为了通过 Hugo Framework 来自动化化部署网站，我们还用到了 [actions-hugo](https://github.com/peaceiris/actions-hugo)。~~
 
 ~~为了让 workflow 有权限访问本仓库，我们用到了 [deploy_key](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-ssh-private-key-deploy_key)，它属于本仓库的私有设置。~~
+
+
+## 其他
+<img src="https://clean-1252075454.cos.ap-nanjing.myqcloud.com/20200528120800990.png" width="500">
+
+[![Stargazers over time](https://starchart.cc/Macr0phag3/xsleaks-wiki-zh_CN.svg)](https://starchart.cc/Macr0phag3/xsleaks-wiki-zh_CN)
