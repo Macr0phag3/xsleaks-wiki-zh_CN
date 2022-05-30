@@ -53,6 +53,9 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/isolation-policies/framing-isolation.md`
 - [x] `defenses/isolation-policies/navigation-isolation.md`
 - [x] `defenses/isolation-policies/strict-isolation.md`
+- [x] `defenses/secure-defaults/_index.md`
+- [x] `defenses/secure-defaults/corb.md`
+- [x] `defenses/secure-defaults/partitioned-cache.md`
 
 
 </details>
