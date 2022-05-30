@@ -65,7 +65,7 @@ Disadvantages:
 
 # 通过 Fetch Metadata 进行缓存保护
 
-[Fetch-Metadata]({{< ref ".../opt-in/fetch-metadata.md" >}}) 是为了让服务器确定客户端发起请求的原因以及方式。其中可以获得的信息之一是 [`Sec-Fetch-Site`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site) 头，它指定了一个请求是来自同一源还是不同源。这可以与 [`Vary`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) 头结合起来，迫使浏览器根据请求是否来自同一源来隔离缓存。
+[Fetch-Metadata]({{< ref "../opt-in/fetch-metadata.md" >}}) 是为了让服务器确定客户端发起请求的原因以及方式。其中可以获得的信息之一是 [`Sec-Fetch-Site`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site) 头，它指定了一个请求是来自同一源还是不同源。这可以与 [`Vary`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) 头结合起来，迫使浏览器根据请求是否来自同一源来隔离缓存。
 
 [Fetch-Metadata]({{< ref "../opt-in/fetch-metadata.md" >}}) is meant to allow servers to determine how and why a request was initiated on the client side. One piece of information that is exposed is the [`Sec-Fetch-Site`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site) header which specifies whether a request is coming from the same origin or a different origin. This can be combined with the [`Vary`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) header in order to force the browser to segment the cache based on whether a request is made from the same origin or a different origin.
 
