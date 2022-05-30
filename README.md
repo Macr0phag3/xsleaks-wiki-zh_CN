@@ -4,9 +4,9 @@ Fork from https://github.com/xsleaks/wiki
 
 由于本人翻译水平有限，所以本翻译保留了原文，方便进行对照。
 
-## 进度 91%
+## 进度 100%
 <details>
-<summary>45/49 点击展开进度详情</summary>
+<summary>48/48 点击展开进度详情</summary>
 
 - [x] `README.md`
 - [x] `_index.md`
@@ -56,7 +56,6 @@ Fork from https://github.com/xsleaks/wiki
 - [x] `defenses/secure-defaults/_index.md`
 - [x] `defenses/secure-defaults/corb.md`
 - [x] `defenses/secure-defaults/partitioned-cache.md`
-
 
 </details>
 
