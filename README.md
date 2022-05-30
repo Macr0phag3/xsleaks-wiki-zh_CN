@@ -4,6 +4,8 @@ Fork from https://github.com/xsleaks/wiki
 
 由于本人翻译水平有限，所以本翻译保留了原文，方便进行对照。
 
+内容中有一些单词我感觉很难翻译出原本的意思，故保留了英文。若你感觉有更好的翻译方式，可提交 issue
+
 ## 进度 100%
 <details>
 <summary>48/48 点击展开进度详情</summary>
@@ -61,6 +63,8 @@ Fork from https://github.com/xsleaks/wiki
 
 ## Demo
 demo 文件夹中是我根据 wiki 以及一些已有代码，尝试写的 poc/exp，仅供参考。
+
+后续会持续补充 CTF 题当做 demo，若你有好的题目想分享，直接提 issue 即可。
 
 
 ## 部署流程
