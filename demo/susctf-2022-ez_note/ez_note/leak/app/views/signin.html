@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simple note</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <h2>signin here!</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm align-self-center d-flex justify-content-end">
+                <p>no account? you can register one here:&nbsp;	</p>
+                <a href="/signup">signup</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

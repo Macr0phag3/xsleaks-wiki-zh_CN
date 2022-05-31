@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simple note</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label for="noteTitle">Title</label>
+            <input type="text" class="form-control" id="noteTitle" name="title" placeholder="Hello world!">
+            <small class="form-text text-muted">We'll never share your note with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="noteContent">Content</label>
+            <textarea id="noteContent" name="content" class="form-control" rows="10" placeholder="Hello everyone!"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+</body>
+</html>

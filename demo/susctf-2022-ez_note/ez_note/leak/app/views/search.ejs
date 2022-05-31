@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simple note</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <p class="lead">Here is your note.</p>
+    </div>
+    <hr class="my-4">
+</div>
+
+<div class="container">
+    <% if(notes.length > 0){ %>
+        <% notes.forEach((note)=>{ %>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%= note.title %></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author: <%= note.author %></h6>
+                    <p class="card-text"><%= note.content %></p>
+                    <a href="/views/<%= note.title %>" class="card-link">read more</a>
+                </div>
+            </div>
+        <% }) %>
+    <% } %>
+</div>
+
+</body>
+</html>

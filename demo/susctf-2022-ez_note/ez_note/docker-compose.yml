@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: z33desecret
+      # log level
+      MONGODB_SYSTEM_LOG_VERBOSITY: 5
+
+  xs_leak:
+    build: ./leak
+    restart: always
+    depends_on:
+      - mongo
+    ports:
+      - 10001:3000
+    environment:
+      MONGODB_PATH: mongodb://root:z33desecret@mongo:27017/
+      ADMIN_PASS: 94rh58g3hfj9cpq01smxioanlc
+      # flag
+      FLAG: SUSCTF{a_sh0rt_fl4g}
